@@ -37,7 +37,7 @@ register_bitfields! {u64,
         /// 0 No effect on data cache invalidate by set/way instructions.
         /// 1 Data cache invalidate by set/way instructions perform a
         ///   data cache clean and invalidate by set/way.
-        SWIO            OFFSET(1)  NUMBITS(1) []
+        SWIO            OFFSET(1)   NUMBITS(1) []
     ]
 }
 
