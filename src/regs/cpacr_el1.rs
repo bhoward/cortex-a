@@ -22,9 +22,7 @@ pub use register::cpu::RegisterReadWrite;
 register_bitfields! {u32,
     CPACR_EL1 [
         /// TODO write more here
-        FPEN           OFFSET(20)  NUMBITS(2) [
-            Enable = 3
-        ]
+        FPEN           OFFSET(20)  NUMBITS(2) []
     ]
 }
 
