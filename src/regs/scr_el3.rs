@@ -19,10 +19,6 @@
 
 pub use register::cpu::RegisterReadWrite;
 
-register_bitfields! {u32,
-    SCR_EL3 []
-}
-
 pub struct Reg;
 
 impl RegisterReadWrite<u32, SCR_EL3::Register> for Reg {

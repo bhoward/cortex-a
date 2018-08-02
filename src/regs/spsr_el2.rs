@@ -19,10 +19,6 @@
 
 pub use register::cpu::RegisterReadWrite;
 
-register_bitfields! {u32,
-    SPSR_EL2 []
-}
-
 pub struct Reg;
 
 impl RegisterReadWrite<u32, SPSR_EL2::Register> for Reg {
