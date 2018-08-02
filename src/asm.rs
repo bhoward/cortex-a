@@ -40,3 +40,15 @@ pub fn wfe() {
         () => unimplemented!(),
     }
 }
+
+/// Exception return
+#[inline]
+pub fn eret() {
+    match () {
+        #[cfg(target_arch = "aarch64")]
+        () => unsafe { asm!("eret" :::: "volatile") },
+
+        #[cfg(not(target_arch = "aarch64"))]
+        () => unimplemented!(),
+    }
+}
