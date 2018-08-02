@@ -12,5 +12,8 @@ pub mod cpacr_el1;
 pub mod currentel;
 pub mod hcr_el2;
 pub mod mpidr_el1;
+pub mod scr_el3;
 pub mod sp_el1;
 pub mod sp;
+pub mod spsr_el3;
+pub mod spsr_el2;
