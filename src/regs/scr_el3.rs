@@ -21,7 +21,7 @@ pub use register::cpu::RegisterReadWrite;
 
 pub struct Reg;
 
-impl RegisterReadWrite<u32, SCR_EL3::Register> for Reg {
+impl RegisterReadWrite<u32, ())> for Reg {
     sys_coproc_read_raw!(u32, "SCR_EL3");
     sys_coproc_write_raw!(u32, "SCR_EL3");
 }
